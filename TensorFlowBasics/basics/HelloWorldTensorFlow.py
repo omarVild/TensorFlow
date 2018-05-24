@@ -10,7 +10,7 @@ zeros =tf.zeros((4,4))
 helloPH = tf.placeholder(tf.string, name='hello')
 namePH = tf.placeholder(tf.string, name='name')
 
-addOpr = helloPH + namePH
+addOpr = tf.add(helloPH, namePH)
 
 
 with tf.Session() as sess:
